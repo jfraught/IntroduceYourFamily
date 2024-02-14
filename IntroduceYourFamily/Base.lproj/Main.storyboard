@@ -1,24 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qlv-JZ-F4j">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Family View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FamilyViewController" customModule="IntroduceYourFamily" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="wtA-ZS-eix">
+                                <rect key="frame" x="18.333333333333343" y="757.66666666666663" width="356.66666666666663" height="40.333333333333371"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGH-fs-nmO">
+                                        <rect key="frame" x="0.0" y="0.0" width="78.666666666666671" height="40.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Juli"/>
+                                        <connections>
+                                            <action selector="juliButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="foB-QC-5YQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHM-or-bam">
+                                        <rect key="frame" x="92.666666666666657" y="0.0" width="78.666666666666657" height="40.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="William"/>
+                                        <connections>
+                                            <action selector="williamButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8gy-MS-9rm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIM-HV-jtY">
+                                        <rect key="frame" x="185.33333333333331" y="0.0" width="78.666666666666686" height="40.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Allie"/>
+                                        <connections>
+                                            <action selector="allieButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QIX-uW-eUg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6i-Wh-Kg3">
+                                        <rect key="frame" x="278" y="0.0" width="78.666666666666686" height="40.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Jordan"/>
+                                        <connections>
+                                            <action selector="jordanButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mB4-3J-r2u"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Fraughton Family" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22d-LP-d1g">
+                                <rect key="frame" x="41" y="103" width="311" height="44.333333333333343"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Family" translatesAutoresizingMaskIntoConstraints="NO" id="hti-xN-cPW">
+                                <rect key="frame" x="41" y="192.33333333333337" width="311" height="311"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="311" id="ZkE-zP-DXo"/>
+                                    <constraint firstAttribute="height" constant="311" id="cFh-hh-RW0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wtA-ZS-eix" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="55y-fR-cs8"/>
+                            <constraint firstItem="hti-xN-cPW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N4e-sp-lfh"/>
+                            <constraint firstItem="hti-xN-cPW" firstAttribute="top" secondItem="22d-LP-d1g" secondAttribute="bottom" constant="45" id="XD2-H1-xem"/>
+                            <constraint firstItem="22d-LP-d1g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dso-yM-9vl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wtA-ZS-eix" secondAttribute="bottom" constant="20" id="gW3-lC-E2l"/>
+                            <constraint firstItem="22d-LP-d1g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mcQ-ce-p4v"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="0pm-J0-MnI"/>
+                    <connections>
+                        <outlet property="allieButton" destination="uIM-HV-jtY" id="L7e-ab-LsQ"/>
+                        <outlet property="jordanButton" destination="t6i-Wh-Kg3" id="UYd-Ed-5Qj"/>
+                        <outlet property="juliButton" destination="aGH-fs-nmO" id="CHf-GE-6YT"/>
+                        <outlet property="williamButton" destination="GHM-or-bam" id="U76-GP-r0V"/>
+                        <segue destination="sE4-6b-DQ0" kind="show" identifier="ShowFamilyMember" id="Arx-E6-VUf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1918.3206106870227" y="3.5211267605633805"/>
+        </scene>
+        <!--Family Member View Controller-->
+        <scene sceneID="Jj0-p8-6Ob">
+            <objects>
+                <viewController id="sE4-6b-DQ0" customClass="FamilyMemberViewController" customModule="IntroduceYourFamily" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YIE-BJ-bI6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Fraughton Family" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87o-YE-fh7">
+                                <rect key="frame" x="41" y="103" width="311" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="311" id="a81-hO-w54"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p4N-dy-7XQ">
+                                <rect key="frame" x="41" y="193" width="311" height="311"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="311" id="8IQ-Om-wbS"/>
+                                    <constraint firstAttribute="height" constant="311" id="ECm-h7-KR6"/>
+                                    <constraint firstAttribute="width" constant="311" id="uMq-om-Yzm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dl5-uD-uIz">
+                                <rect key="frame" x="41" y="549" width="311" height="20.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="311" id="Vhp-1P-umc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lMY-vF-M8e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dl5-uD-uIz" firstAttribute="top" secondItem="p4N-dy-7XQ" secondAttribute="bottom" constant="45" id="51C-qs-j1r"/>
+                            <constraint firstItem="87o-YE-fh7" firstAttribute="top" secondItem="lMY-vF-M8e" secondAttribute="top" id="Ka3-EC-HqQ"/>
+                            <constraint firstItem="87o-YE-fh7" firstAttribute="centerX" secondItem="YIE-BJ-bI6" secondAttribute="centerX" id="PmU-1M-fvG"/>
+                            <constraint firstItem="p4N-dy-7XQ" firstAttribute="centerX" secondItem="YIE-BJ-bI6" secondAttribute="centerX" id="jGc-bF-f4p"/>
+                            <constraint firstItem="Dl5-uD-uIz" firstAttribute="centerX" secondItem="YIE-BJ-bI6" secondAttribute="centerX" id="n9v-6b-8dG"/>
+                            <constraint firstItem="p4N-dy-7XQ" firstAttribute="top" secondItem="87o-YE-fh7" secondAttribute="bottom" constant="45" id="qKI-hZ-d6H"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="c2X-4y-APC"/>
+                    <connections>
+                        <outlet property="bioLabel" destination="Dl5-uD-uIz" id="TjI-Lw-jA8"/>
+                        <outlet property="familyMemberImage" destination="p4N-dy-7XQ" id="MIj-Mv-QTF"/>
+                        <outlet property="nameLabel" destination="87o-YE-fh7" id="hzh-lL-pSH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Z8-a5-BZr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2797.709923664122" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4gf-Vd-Th5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qlv-JZ-F4j" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="41M-Uz-CHe">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VSo-oW-It2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MQB-bX-P0y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991.60305343511448" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Family" width="850" height="850"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
